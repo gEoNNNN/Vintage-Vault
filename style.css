@@ -62,7 +62,7 @@ nav ul li button:focus {
 .navbar .bg {
   width: 100%;
   position: absolute;
-  margin-left: -0.5vw;
+  margin-left: -0.6vw;
   z-index: -1;
 }
 
@@ -73,18 +73,15 @@ nav ul li button:focus {
   font-size: 6vw;
   animation: fadeIn 2s ease-in-out forwards;
 }
-
-.logo2 {
+.home .logo2 {
   margin-left: 42vw;
   margin-top: -9vw;
 }
-
-.logo1 {
+.home .logo1 {
   margin-left: 36vw;
   margin-top: 12vw;
 }
-
-.frame1 {
+.home .frame1 {
   opacity: 0;
   width: 19vw;
   position: absolute;
@@ -92,8 +89,7 @@ nav ul li button:focus {
   margin-left: 27vw;
   animation: slideInLeft 2s ease-in-out 0.5s forwards;
 }
-
-.frame2 {
+.home .frame2 {
   opacity: 0;
   width: 10vw;
   position: absolute;
@@ -102,16 +98,122 @@ nav ul li button:focus {
   animation: slideInRight 2s ease-in-out 0.5s forwards;
 }
 
-.margin1 {
-  position: absolute;
-  margin-top: 12vw;
-  margin-left: -4vw;
+.description {
+  position: relative;
 }
-
-.margin2 {
+.description h1 {
+  font-family: "Spectral SC", serif;
+  width: 30%;
+  font-size: 2.2vw;
+  position: absolute;
+  z-index: 3;
+}
+.description h2 {
+  font-family: "Montserrat", sans-serif;
+  width: 35%;
+  font-size: 1.2vw;
+  position: absolute;
+  z-index: 3;
+  color: #877C6D;
+}
+.description h3 {
+  top: 20vw;
+  left: 52vw;
+  font-family: "Spectral SC", serif;
+  width: 35%;
+  font-size: 1.2vw;
+  position: absolute;
+  z-index: 3;
+  color: #BD8D4C;
+}
+.description .margin1 {
+  width: 40vw;
   position: absolute;
   margin-top: 12vw;
-  margin-left: 57.13vw;
+  margin-left: -0.6vw;
+}
+.description .margin2 {
+  width: 40vw;
+  position: absolute;
+  margin-top: 12vw;
+  margin-left: 58.51vw;
+}
+.description .margin3 {
+  width: 30vw;
+  position: absolute;
+  margin-top: 12.9vw;
+  margin-left: 35vw;
+}
+.description .title_description1 {
+  top: 21vw;
+  left: 50vw;
+}
+.description .title_description2 {
+  top: 51vw;
+  left: 12vw;
+  width: 35%;
+}
+.description .description1 {
+  top: 30vw;
+  left: 50vw;
+}
+.description .description2 {
+  top: 60vw;
+  left: 12vw;
+}
+.description .crown {
+  position: absolute;
+  width: 2vw;
+  z-index: 3;
+  top: 21vw;
+  left: 49.6vw;
+}
+.description .description-bottom {
+  width: 101.5vw;
+  z-index: 3;
+  position: absolute;
+  top: 80vw;
+  left: -3vw;
+}
+.description .painting1 {
+  position: absolute;
+  width: 15vw;
+  height: auto;
+  top: 23vw;
+  left: 30vw;
+  z-index: 2;
+}
+.description .painting2 {
+  position: absolute;
+  width: 14vw;
+  height: auto;
+  top: 54vw;
+  left: 51vw;
+  z-index: 2;
+}
+.description .drowing1 {
+  position: absolute;
+  width: 27vw;
+  height: auto;
+  top: 20vw;
+  left: 3vw;
+  z-index: 2;
+}
+.description .drowing2 {
+  position: absolute;
+  width: 27vw;
+  height: auto;
+  top: 50vw;
+  left: 65vw;
+  z-index: 2;
+}
+.description .bg1 {
+  position: relative;
+  width: 99.55vw;
+  height: 70vw;
+  margin-top: 15vw;
+  margin-left: -1vw;
+  z-index: 1;
 }
 
 @keyframes fadeIn {

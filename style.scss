@@ -69,7 +69,7 @@ nav {
     .bg {
     width: 100%;
     position: absolute;
-    margin-left: -0.5vw;
+    margin-left: -0.6vw;
     z-index: -1;
     }
 }
@@ -82,46 +82,166 @@ nav {
         font-size: 6vw;
         animation: fadeIn 2s ease-in-out forwards;
     }
+    .logo2 {
+        margin-left: 42vw;
+        margin-top: -9vw;
+    }
+    
+    .logo1 {
+        margin-left: 36vw;
+        margin-top: 12vw;
+    }
+    
+    .frame1 {
+        opacity: 0;
+        width: 19vw;
+        position: absolute;
+        margin-top: -3vw;
+        margin-left: 27vw;
+        animation: slideInLeft 2s ease-in-out 0.5s forwards;
+    }
+    .frame2 {
+        opacity: 0;
+        width: 10vw;
+        position: absolute;
+        margin-top: 3vw;
+        margin-left: 60vw;
+        animation: slideInRight 2s ease-in-out 0.5s forwards;
+    }
+    
+    
 }
 
-.logo2 {
-    margin-left: 42vw;
-    margin-top: -9vw;
+.description{
+
+    position: relative;
+
+    h1 {
+        font-family: "Spectral SC", serif;
+        width: 30%;
+        font-size: 2.2vw;
+        position: absolute;
+        z-index: 3;
+    }
+
+    h2 {
+        font-family:"Montserrat", sans-serif;
+        width: 35%;
+        font-size: 1.2vw;
+        position: absolute;
+        z-index: 3;
+        color: #877C6D;
+    }
+
+    h3 {
+        top: 20vw;
+        left: 52vw;
+        font-family: "Spectral SC", serif;
+        width: 35%;
+        font-size: 1.2vw;
+        position: absolute;
+        z-index: 3;
+        color: #BD8D4C;
+    }
+
+    .margin1 {
+        width: 40vw;
+        position: absolute;
+        margin-top: 12vw;
+        margin-left: -0.6vw;
+    }
+    
+    .margin2 {
+        width: 40vw;
+        position: absolute;
+        margin-top: 12vw;
+        margin-left: 58.51vw;
+    }
+    
+    .margin3 {
+        width: 30vw;
+        position: absolute;
+        margin-top: 12.9vw;
+        margin-left: 35vw;
+    }
+
+    .title_description1 {
+        top: 21vw;
+        left: 50vw;
+    }
+    .title_description2 {
+        top: 51vw;
+        left: 12vw;
+        width: 35%;
+    }
+    .description1 {
+        top: 30vw;
+        left:50vw ;
+    }
+    .description2 {
+        top: 60vw;
+        left: 12vw;
+    }
+    .crown {
+        position: absolute;
+        width: 2vw;
+        z-index: 3;
+        top: 21vw;
+        left: 49.6vw;
+    }
+    .description-bottom{
+        width: 101.5vw;
+        z-index: 3;
+        position: absolute;
+        top: 80vw;
+        left: -3vw;
+    }
+    .painting1 {
+        position: absolute; 
+        width: 15vw;
+        height: auto;
+        top: 23vw;
+        left: 30vw;
+        z-index: 2;
+    }
+    
+    .painting2 {
+        position: absolute; 
+        width: 14vw;
+        height: auto;
+        top: 54vw;
+        left: 51vw;
+        z-index: 2;
+    }
+    .drowing1 {
+        position: absolute; 
+        width: 27vw;
+        height: auto;
+        top: 20vw;
+        left: 3vw;
+        z-index: 2;
+      }
+    
+    .drowing2 {
+        position: absolute; 
+        width: 27vw;
+        height: auto;
+        top: 50vw;
+        left: 65vw;
+        z-index: 2;
+    }
+    .bg1 {
+        position: relative;
+        width: 99.55vw;
+        height: 70vw;
+        margin-top: 15vw;
+        margin-left: -1vw;
+        z-index: 1;
+    }
+    
 }
 
-.logo1 {
-    margin-left: 36vw;
-    margin-top: 12vw;
-}
 
-.frame1 {
-    opacity: 0;
-    width: 19vw;
-    position: absolute;
-    margin-top: -3vw;
-    margin-left: 27vw;
-    animation: slideInLeft 2s ease-in-out 0.5s forwards;
-}
-.frame2 {
-    opacity: 0;
-    width: 10vw;
-    position: absolute;
-    margin-top: 3vw;
-    margin-left: 60vw;
-    animation: slideInRight 2s ease-in-out 0.5s forwards;
-}
-
-.margin1 {
-    position: absolute;
-    margin-top: 12vw;
-    margin-left: -4vw;
-}
-
-.margin2 {
-    position: absolute;
-    margin-top: 12vw;
-    margin-left: 57.13vw;
-}
 
 @keyframes fadeIn {
     from {
