@@ -62,7 +62,7 @@ nav ul li button:focus {
 .navbar .bg {
   width: 100%;
   position: absolute;
-  margin-left: -0.6vw;
+  margin-left: 0vw;
   z-index: -1;
 }
 
@@ -75,7 +75,7 @@ nav ul li button:focus {
 }
 .home .logo2 {
   margin-left: 42vw;
-  margin-top: -9vw;
+  margin-top: -4vw;
 }
 .home .logo1 {
   margin-left: 36vw;
@@ -130,13 +130,13 @@ nav ul li button:focus {
   width: 40vw;
   position: absolute;
   margin-top: 12vw;
-  margin-left: -0.6vw;
+  margin-left: 0vw;
 }
 .description .margin2 {
   width: 40vw;
   position: absolute;
   margin-top: 12vw;
-  margin-left: 58.51vw;
+  margin-left: 59.2vw;
 }
 .description .margin3 {
   width: 30vw;
@@ -173,7 +173,7 @@ nav ul li button:focus {
   z-index: 3;
   position: absolute;
   top: 80vw;
-  left: -3vw;
+  left: 0vw;
 }
 .description .painting1 {
   position: absolute;
@@ -212,8 +212,27 @@ nav ul li button:focus {
   width: 99.55vw;
   height: 70vw;
   margin-top: 15vw;
-  margin-left: -1vw;
+  margin-left: 0vw;
   z-index: 1;
+}
+
+.events .bg2 {
+  position: relative;
+  width: 99.55vw;
+  height: 70vw;
+  top: 0vw;
+  left: 0vw;
+  z-index: 1;
+}
+.events .list {
+  position: absolute;
+  top: 300vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes fadeIn {
