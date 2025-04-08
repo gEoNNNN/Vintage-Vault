@@ -333,7 +333,59 @@ nav {
 
     }
 }
+  
+.wines {
+    position: relative;
+    padding: 5vw 0;
+  
+    .wines_bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+  
+    .wines_grid_container {
+        display: flex;
+        justify-content: center;
+        z-index: 2;
+        position: relative;
+        width: 100%;
+    }
+  
+    .card {
+        padding: 3vw;
+        margin-bottom: 2vw;
+        margin-left: 1vw;
+        border-radius: 10px;
+        font-family: "Arial", sans-serif;
+        font-weight: bold;
+    }
 
+    .card_wine {
+        position: absolute;
+        margin-left: -27vw;
+        margin-top: 3vw;
+        width: 6vw;
+    }
+
+    .card_title {
+        font-family: "Spectral SC", serif;
+        font-size: 1.1vw;
+        margin-left: 5vw;
+        margin-top: -18vw;
+    }
+
+    .card_description {
+        font-family: "Spectral SC", serif;
+        text-align: left;
+        font-size: 0.5vw;
+        width: 20%;
+        margin-left: 41vw;
+    }
+  }
+    
 
 
 @keyframes fadeIn {
