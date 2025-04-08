@@ -134,7 +134,7 @@ nav {
     }
 
     h3 {
-        top: 20vw;
+        top: 18.5vw;
         left: 52vw;
         font-family: "Spectral SC", serif;
         width: 35%;
@@ -245,20 +245,92 @@ nav {
     .bg2{ 
         position: relative;
         width: 99.55vw;
-        height: 70vw;
+        height: 50vw;
         top: 0vw;
         left: 0vw;
         z-index: 1;
     }
+
     .list {
         position: absolute;
-        top: 300vh;  
+        top: 135vw;  
         left: 50%;
         transform: translateX(-50%); 
         width: 100%; 
         z-index: 2;
         display: flex;
         justify-content: center;
+    }
+
+    .circle {
+        margin: 5vw;
+        width: 12vw;
+      }
+
+    .events_action {
+        width: 7vw;
+        position: absolute;
+        margin-left: -14.4vw;
+        margin-top: 7vw;
+    }
+
+    .events_top {
+
+        h1 {
+            font-family: "Spectral SC", serif;
+            width: 30%;
+            font-size: 2.2vw;
+            position: absolute;
+            z-index: 3;
+            top: 131vw;
+            text-align: center;
+            left: 50%;
+             transform: translate(-50%, -50%);
+            font-weight: 700;
+        }
+
+        h2 {
+            top: 124vw;
+            left: 65%;
+             transform: translate(-50%, -50%);
+            font-family: "Spectral SC", serif;
+            width: 35%;
+            font-size: 1.2vw;
+            position: absolute;
+            z-index: 3;
+            color: #BD8D4C;
+        }
+        
+        .events_crown {
+            top: 126.5vw;
+            left: 46%;
+             transform: translate(-50%, -50%);
+            width: 2vw;
+            position: absolute;
+            z-index: 3;
+        }
+      }
+
+      .events_action_title {
+        font-family: "Spectral SC", serif;
+        font-size: 1.5vw;
+        margin-top: -4vw;
+    }
+
+    .events_action_description {
+        color: #877C6D;
+        font-family: "Spectral SC", serif;
+        text-align: center;
+        font-size: 0.9vw;
+        width: 50%;
+        margin-left: 6vw;
+    }
+
+    .events_bottom {
+        position: absolute;
+        z-index: 3;
+        top: 170vw;
+
     }
 }
 
