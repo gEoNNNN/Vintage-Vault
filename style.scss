@@ -333,58 +333,91 @@ nav {
 
     }
 }
-  
-.wines {
-    position: relative;
-    padding: 5vw 0;
-  
-    .wines_bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: -1;
-    }
-  
-    .wines_grid_container {
-        display: flex;
-        justify-content: center;
-        z-index: 2;
-        position: relative;
-        width: 100%;
-    }
-  
-    .card {
-        padding: 3vw;
-        margin-bottom: 2vw;
-        margin-left: 1vw;
-        border-radius: 10px;
-        font-family: "Arial", sans-serif;
-        font-weight: bold;
-    }
 
-    .card_wine {
-        position: absolute;
-        margin-left: -27vw;
-        margin-top: 3vw;
-        width: 6vw;
-    }
+.wines_bg {
+    position: absolute;
+    top: 73vw;
+    left: 0;
+    width: 200vw;
+    z-index: -1;
+  }
 
-    .card_title {
-        font-family: "Spectral SC", serif;
-        font-size: 1.1vw;
-        margin-left: 5vw;
-        margin-top: -18vw;
-    }
 
-    .card_description {
-        font-family: "Spectral SC", serif;
-        text-align: left;
-        font-size: 0.5vw;
-        width: 20%;
-        margin-left: 41vw;
+.test {
+    position: relative; 
+    top: 10vw;
+  
+    ul {
+      column-count: 2;
+      column-gap: 2rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  
+      li {
+        break-inside: avoid;
+        margin-bottom: 2rem;
+        text-align: center;
+  
+        .card {
+          position: relative;
+          padding: 1rem;
+  
+          .card_bg {
+            width: 35vw;
+          }
+  
+          .card_wine {
+            width: 7vw;
+            margin-left: -34vw;
+            margin-top: 4vw;
+            position: absolute;
+          }
+
+          .card_wine2 {
+            width: 10vw;
+            margin-left: -34vw;
+            margin-top: 4vw;
+            position: absolute;
+          }
+
+          .card_wine3 {
+            width: 6vw;
+            margin-left: -34vw;
+            margin-top: 4vw;
+            position: absolute;
+          }
+
+        .card_wine4 {
+            width: 10vw;
+            margin-left: -34vw;
+            margin-top: 6vw;
+            position: absolute;
+          }
+  
+          .card_title {
+            font-family: "Spectral SC", serif;
+            font-size: 1.3vw;
+            margin-left: 17vw;
+            margin-top: -24vw;
+            position: absolute;
+          }
+  
+          .card_description {
+            font-family: "Spectral SC", serif;
+            width: 20vw;
+            font-size: 0.7vw;
+            position: absolute;
+            z-index: 1;
+            top: 10vw;
+            margin-left: 17vw;
+            text-align: left;
+          }
+        }
+      }
     }
   }
+  
     
 
 

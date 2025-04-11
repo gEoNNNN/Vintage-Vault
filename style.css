@@ -294,50 +294,80 @@ nav ul li button:focus {
   top: 167vw;
 }
 
-.wines {
-  position: relative;
-  padding: 5vw 0;
-}
-.wines .wines_bg {
+.wines_bg {
   position: absolute;
-  top: 0;
+  top: 73vw;
   left: 0;
-  width: 100%;
+  width: 200vw;
   z-index: -1;
 }
-.wines .wines_grid_container {
-  display: flex;
-  justify-content: center;
-  z-index: 2;
+
+.test {
   position: relative;
-  width: 100%;
+  top: 10vw;
 }
-.wines .card {
-  padding: 3vw;
-  margin-bottom: 2vw;
-  margin-left: 1vw;
-  border-radius: 10px;
-  font-family: "Arial", sans-serif;
-  font-weight: bold;
+.test ul {
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.wines .card_wine {
+.test ul li {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.test ul li .card {
+  position: relative;
+  padding: 1rem;
+}
+.test ul li .card .card_bg {
+  width: 35vw;
+}
+.test ul li .card .card_wine {
+  width: 7vw;
+  margin-left: -34vw;
+  margin-top: 4vw;
   position: absolute;
-  margin-left: -27vw;
-  margin-top: 3vw;
+}
+.test ul li .card .card_wine2 {
+  width: 10vw;
+  margin-left: -34vw;
+  margin-top: 4vw;
+  position: absolute;
+}
+.test ul li .card .card_wine3 {
   width: 6vw;
+  margin-left: -34vw;
+  margin-top: 4vw;
+  position: absolute;
 }
-.wines .card_title {
-  font-family: "Spectral SC", serif;
-  font-size: 1.1vw;
-  margin-left: 5vw;
-  margin-top: -18vw;
+.test ul li .card .card_wine4 {
+  width: 10vw;
+  margin-left: -34vw;
+  margin-top: 6vw;
+  position: absolute;
 }
-.wines .card_description {
+.test ul li .card .card_title {
   font-family: "Spectral SC", serif;
+  font-size: 1.3vw;
+  margin-left: 17vw;
+  margin-top: -24vw;
+  position: absolute;
+}
+.test ul li .card .card_description {
+  font-family: "Spectral SC", serif;
+  width: 20vw;
+  font-size: 0.7vw;
+  position: absolute;
+  z-index: 1;
+  top: 10vw;
+  margin-left: 17vw;
   text-align: left;
-  font-size: 0.5vw;
-  width: 20%;
-  margin-left: 41vw;
 }
 
 @keyframes fadeIn {
