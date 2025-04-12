@@ -67,7 +67,7 @@ nav {
         margin-left: 3vw ;
     }
     .bg {
-    width: 100%;
+    width: 100vw;
     position: absolute;
     margin-left: 0vw;
     z-index: -1;
@@ -118,7 +118,7 @@ nav {
 
     h1 {
         font-family: "Spectral SC", serif;
-        width: 30%;
+        width: 30vw;
         font-size: 2.2vw;
         position: absolute;
         z-index: 3;
@@ -126,7 +126,7 @@ nav {
 
     h2 {
         font-family:"Montserrat", sans-serif;
-        width: 35%;
+        width: 30vw;
         font-size: 1.2vw;
         position: absolute;
         z-index: 3;
@@ -137,56 +137,42 @@ nav {
         top: 18.5vw;
         left: 52vw;
         font-family: "Spectral SC", serif;
-        width: 35%;
+        width: 30vw;
         font-size: 1.2vw;
         position: absolute;
         z-index: 3;
         color: #BD8D4C;
     }
 
-    .margin1 {
-        width: 40vw;
+    .margin {
+        width: 100vw;
         position: absolute;
-        margin-top: 12vw;
+        margin-top: 8vw;
         margin-left: 0vw;
-    }
-    
-    .margin2 {
-        width: 40vw;
-        position: absolute;
-        margin-top: 12vw;
-        margin-left: 59.2vw;
-    }
-    
-    .margin3 {
-        width: 30vw;
-        position: absolute;
-        margin-top: 12.9vw;
-        margin-left: 35vw;
     }
 
     .title_description1 {
-        top: 21vw;
+        margin-top: -62vw;
         left: 50vw;
     }
     .title_description2 {
-        top: 51vw;
+        margin-top: -32vw;
         left: 12vw;
-        width: 35%;
+        width: 34vw;
     }
     .description1 {
-        top: 30vw;
+        margin-top: -54vw;
         left:50vw ;
     }
     .description2 {
-        top: 60vw;
+        margin-top: -25vw;
         left: 12vw;
     }
     .crown {
         position: absolute;
         width: 2vw;
         z-index: 3;
-        top: 21vw;
+        top: 20.2vw;
         left: 49.6vw;
     }
     .description-bottom{
@@ -232,10 +218,9 @@ nav {
     }
     .bg1 {
         position: relative;
-        width: 99.55vw;
+        width: 100vw;
         height: 70vw;
         margin-top: 15vw;
-        margin-left: 0vw;
         z-index: 1;
     }
     
@@ -244,7 +229,7 @@ nav {
 .events {
     .bg2{ 
         position: relative;
-        width: 99.55vw;
+        width: 100vw;
         height: 50vw;
         top: 0vw;
         left: 0vw;
@@ -254,9 +239,9 @@ nav {
     .list {
         position: absolute;
         top: 135vw;  
-        left: 50%;
-        transform: translateX(-50%); 
-        width: 100%; 
+        left: 49vw;
+        transform: translateX(-50.1vw); 
+        width: 100vw; 
         z-index: 2;
         display: flex;
         justify-content: center;
@@ -278,20 +263,20 @@ nav {
 
         h1 {
             font-family: "Spectral SC", serif;
-            width: 30%;
+            width: 30vw;
             font-size: 2.2vw;
             position: absolute;
             z-index: 3;
             top: 131vw;
             text-align: center;
-            left: 50%;
+            left: 49vw;
              transform: translate(-50%, -50%);
             font-weight: 700;
         }
 
         h2 {
             top: 124vw;
-            left: 65%;
+            left: 65vw;
              transform: translate(-50%, -50%);
             font-family: "Spectral SC", serif;
             width: 35%;
@@ -302,8 +287,8 @@ nav {
         }
         
         .events_crown {
-            top: 126.5vw;
-            left: 46%;
+            top: 126vw;
+            left: 46vw;
              transform: translate(-50%, -50%);
             width: 2vw;
             position: absolute;
@@ -329,16 +314,17 @@ nav {
     .events_bottom {
         position: absolute;
         z-index: 3;
-        top: 167vw;
+        margin-top: 0vw;
 
     }
 }
 
 .wines_bg {
     position: absolute;
-    top: 73vw;
+    margin-top: 0vw;
     left: 0;
-    width: 200vw;
+    width: 100vw;
+    height: 230vw;
     z-index: -1;
   }
 
@@ -454,5 +440,169 @@ nav {
     to {
         transform: translateX(0);
         opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 1629px) { 
+    .description{
+        h3 {
+            display: none;
+        }
+        .crown {
+            display: none;
+        }
+
+    }
+    .events {
+        .events_crown {
+            display: none;
+        }
+        h2 {
+            display: none;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 1311px) { 
+    .wines_bg {
+        height: 230vw;
+      }
+}
+
+@media screen and (max-width: 909px) { 
+    .wines_bg {
+        height: 240vw;
+      }
+}
+
+@media screen and (max-width: 785px) { 
+    .home {
+        margin-top: -5vw;
+    }
+}
+
+
+@media screen and (max-width: 719px) { 
+    .wines_bg {
+        height: 250vw;
+      }
+}
+
+@media screen and (max-width: 607px) { 
+    .wines_bg {
+        height: 260vw;
+      }
+    .home {
+        margin-top: -6vw;
+    }
+}
+
+@media screen and (max-width: 521px) { 
+    .wines_bg {
+        height: 270vw;
+      }
+    .home {
+        margin-top: -8vw;
+    }
+}
+
+@media screen and (max-width: 450px) { 
+    .wines_bg {
+        height: 280vw;
+      }
+    .home {
+        margin-top: -15vw;
+    }
+}
+
+@media screen and (max-width: 390px) { 
+    .wines_bg {
+        height: 300vw;
+      }
+}
+
+@media screen and (max-width: 339px) { 
+    .home {
+        margin-top: -22vw;
+    }
+}
+
+@media screen and (max-width: 320px) { 
+    .wines_bg {
+        height: 320vw;
+      }
+}
+
+@media screen and (max-width: 261px) { 
+    .home {
+        margin-top: -25vw;
+    }
+}
+
+@media screen and (max-width: 640px) { 
+    .events {
+        .bg2{ 
+            height: 250vw;
+        }
+    
+        .circle {
+            width: 20vw;
+          }
+    
+        .events_action {
+            width: 11vw;
+            margin-left: -20vw;
+            margin-top: 10vw;
+        }
+    
+        .events_top {
+    
+            h1 {
+                width: 40vw;
+                font-size: 3vw;
+            }
+            
+          }
+    
+          .events_action_title {
+            font-size: 3vw;
+            margin-top: -2vw;
+        }
+    
+        .events_action_description {
+            color: #877C6D;
+            font-family: "Spectral SC", serif;
+            font-size: 2vw;
+            margin-left: 6vw;
+            left: 49vw;
+             transform: translateX(20vw); 
+        }
+    }
+    
+}
+
+@media screen and (max-width: 370px) {
+    .events {
+        .bg2{ 
+            height: 270vw;
+        }
+    }
+}
+
+@media screen and (max-width: 269px) {
+    .events {
+        .bg2{ 
+            height: 290vw;
+        }
+    }
+}
+
+@media screen and (max-width: 225px) {
+    .events {
+        .bg2{ 
+            height: 310vw;
+        }
     }
 }
