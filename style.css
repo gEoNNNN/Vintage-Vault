@@ -405,6 +405,66 @@ nav ul li button:focus {
     display: none;
   }
 }
+.contacts {
+  position: relative;
+}
+.contacts .contacts_header {
+  position: relative;
+  top: 15vw;
+  left: 0;
+  z-index: 2;
+}
+.contacts button {
+  position: absolute;
+  top: 54vw; /* Adjust as needed */
+  left: 70%;
+  transform: translateX(-50%); /* Center horizontally */
+  z-index: 3; /* Higher than both images */
+  width: 12vw; /* Optional: control size */
+  padding: 0.6vw;
+  border-radius: 2vw; /* Optional: rounded corners */
+  font-family: "Spectral SC", serif;
+  background-color: #BD8C4D;
+  font-size: 0.9vw;
+}
+.contacts .contacts_bg {
+  position: relative;
+  width: 100vw;
+  height: 50vw;
+  top: 15vw;
+  left: 0;
+  z-index: 1;
+}
+.contacts h1 {
+  font-family: "Spectral SC", serif;
+  width: 30vw;
+  font-size: 2.6vw;
+  position: absolute;
+  z-index: 3;
+  top: 25vw;
+  text-align: center;
+  left: 49vw;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+}
+.contacts form {
+  position: absolute;
+  top: 32vw; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  z-index: 3; /* Higher than both images */
+  width: 50vw; /* Optional: control size */
+  padding: 2vw;
+  border-radius: 8px; /* Optional: rounded corners */
+}
+.contacts input, .contacts textarea {
+  border-radius: 0.9vw;
+}
+.contacts .uk-input,
+.contacts .uk-textarea {
+  background-color: #f8ece4;
+}
+
 @media screen and (max-width: 1311px) {
   .wines_bg {
     height: 230vw;
