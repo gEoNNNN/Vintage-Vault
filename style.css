@@ -69,6 +69,9 @@ nav ul li button:focus {
   display: none;
   position: absolute;
 }
+.navbar .mobile_nav {
+  display: none;
+}
 
 .home p {
   font-family: "Spectral SC", serif;
@@ -373,6 +376,10 @@ nav ul li button:focus {
   font-weight: 700;
 }
 
+.mobile_app {
+  display: none;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -594,6 +601,46 @@ nav ul li button:focus {
   }
 }
 @media screen and (max-width: 470px) {
+  .navbar .mobile_nav {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: -15vw;
+    width: 100vw;
+    z-index: 1000;
+    height: auto;
+  }
+  .navbar .mobilenav_bg {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .navbar .mobile_nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    z-index: 1;
+  }
+  .navbar .mobile_nav ul li {
+    display: flex;
+  }
+  .navbar .mobile_nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar .icon {
+    width: 8vw;
+    height: auto;
+  }
   .navbar img {
     width: 10vw;
     margin-top: 0vw;
@@ -725,6 +772,7 @@ nav ul li button:focus {
   }
   .contacts {
     position: relative;
+    top: 70vw;
   }
   .contacts .contacts_header {
     position: relative;
@@ -781,6 +829,34 @@ nav ul li button:focus {
   .contacts .uk-input,
   .contacts .uk-textarea {
     background-color: #f8ece4;
+  }
+  .mobile_app {
+    display: block;
+  }
+  .mobile_app .mobile_app_content .mobile_app_text {
+    font-family: "Spectral SC", serif;
+    width: 60vw;
+    font-size: 4vw;
+    position: absolute;
+    z-index: 3;
+    top: 1296vw;
+    text-align: center;
+    left: 35vw;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    color: #000;
+  }
+  .mobile_app .mobile_app_content .mockup {
+    position: absolute;
+    margin-top: 10vw;
+    margin-left: 65vw;
+    width: 20vw;
+  }
+  .mobile_app .mobile_app_content .appstore {
+    position: absolute;
+    margin-top: 20vw;
+    margin-left: 20vw;
+    width: 30vw;
   }
 }
 @media screen and (max-width: 370px) {
