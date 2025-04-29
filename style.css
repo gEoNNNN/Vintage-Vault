@@ -65,6 +65,10 @@ nav ul li button:focus {
   margin-left: 0vw;
   z-index: -1;
 }
+.navbar .bg_mobile {
+  display: none;
+  position: absolute;
+}
 
 .home p {
   font-family: "Spectral SC", serif;
@@ -357,6 +361,17 @@ nav ul li button:focus {
   margin-left: 17vw;
   text-align: left;
 }
+.test .wine_title {
+  font-family: "Spectral SC", serif;
+  width: 40vw;
+  font-size: 5vw;
+  position: absolute;
+  z-index: 3;
+  text-align: center;
+  left: 49vw;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+}
 
 @keyframes fadeIn {
   from {
@@ -407,6 +422,7 @@ nav ul li button:focus {
 }
 .contacts {
   position: relative;
+  margin-top: -10vw;
 }
 .contacts .contacts_header {
   position: relative;
@@ -469,6 +485,9 @@ nav ul li button:focus {
   .wines_bg {
     height: 230vw;
   }
+  .contacts button {
+    margin-top: 8vw;
+  }
 }
 @media screen and (max-width: 909px) {
   .wines_bg {
@@ -478,6 +497,22 @@ nav ul li button:focus {
 @media screen and (max-width: 785px) {
   .home {
     margin-top: -5vw;
+  }
+  .contacts {
+    margin-top: -14vw;
+  }
+  .contacts button {
+    margin-top: 12vw;
+    width: 15vw;
+    font-size: 1.2vw;
+  }
+  .contacts .contacts_bg {
+    position: relative;
+    width: 100vw;
+    height: 70vw;
+    top: 15vw;
+    left: 0;
+    z-index: 1;
   }
 }
 @media screen and (max-width: 719px) {
@@ -558,6 +593,196 @@ nav ul li button:focus {
     transform: translateX(20vw);
   }
 }
+@media screen and (max-width: 470px) {
+  .navbar img {
+    width: 10vw;
+    margin-top: 0vw;
+    margin-left: 3vw;
+  }
+  .navbar .bg {
+    display: none;
+  }
+  .navbar .bg_mobile {
+    display: block;
+    width: 100vw;
+    position: absolute;
+    margin-left: 0vw;
+    z-index: -1;
+  }
+  .navbar .pc_nav {
+    display: none;
+  }
+  .navbar .logo {
+    display: none;
+  }
+  .description {
+    top: 110vw;
+  }
+  .events .bg2 {
+    margin-top: 110vw;
+    height: 250vw;
+  }
+  .events .list {
+    margin-top: 75vw;
+  }
+  .events .events_top h1 {
+    margin-top: 74vw;
+  }
+  .home p {
+    font-size: 13vw;
+  }
+  .home .logo2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0vw;
+    margin-top: 60vw;
+  }
+  .home .logo1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0vw;
+    margin-top: 47vw;
+  }
+  .home .frame1 {
+    opacity: 0;
+    width: 35vw;
+    position: absolute;
+    margin-top: 44vw;
+    margin-left: 1vw;
+    animation: slideInLeft 2s ease-in-out 0.5s forwards;
+  }
+  .home .frame2 {
+    opacity: 0;
+    width: 24vw;
+    position: absolute;
+    margin-top: 52vw;
+    margin-left: 72vw;
+    animation: slideInRight 2s ease-in-out 0.5s forwards;
+  }
+  .wines_bg {
+    height: 950vw;
+  }
+  .test ul {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+  .test ul li .card .card_bg {
+    width: 65vw;
+  }
+  .test ul li .card .card_wine {
+    width: 11vw;
+    margin-left: -60vw;
+    margin-top: 11vw;
+    position: absolute;
+  }
+  .test ul li .card .card_wine2 {
+    width: 15.7vw;
+    margin-left: -60vw;
+    margin-top: 11vw;
+    position: absolute;
+  }
+  .test ul li .card .card_wine3 {
+    width: 9.4vw;
+    margin-left: -60vw;
+    margin-top: 11vw;
+    position: absolute;
+  }
+  .test ul li .card .card_wine4 {
+    width: 15.7vw;
+    margin-left: -60vw;
+    margin-top: 14vw;
+    position: absolute;
+  }
+  .test ul li .card .card_title {
+    font-family: "Spectral SC", serif;
+    font-size: 2.4vw;
+    margin-left: 37vw;
+    margin-top: -44vw;
+    position: absolute;
+  }
+  .test ul li .card .card_description {
+    font-family: "Spectral SC", serif;
+    width: 40vw;
+    font-size: 1.45vw;
+    position: absolute;
+    z-index: 1;
+    top: 15vw;
+    margin-left: 37vw;
+    text-align: left;
+  }
+  .test .wine_title {
+    font-family: "Spectral SC", serif;
+    width: 40vw;
+    font-size: 5vw;
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    left: 49vw;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+  }
+  .contacts {
+    position: relative;
+  }
+  .contacts .contacts_header {
+    position: relative;
+    top: 15vw;
+    left: 0;
+    z-index: 2;
+  }
+  .contacts button {
+    position: absolute;
+    top: 114vw; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 3; /* Higher than both images */
+    width: 30vw; /* Optional: control size */
+    padding: 0.6vw;
+    border-radius: 2vw; /* Optional: rounded corners */
+    font-family: "Spectral SC", serif;
+    background-color: #BD8C4D;
+    font-size: 2.5vw;
+  }
+  .contacts .contacts_bg {
+    position: relative;
+    width: 100vw;
+    height: 130vw;
+    top: 15vw;
+    left: 0;
+    z-index: 1;
+  }
+  .contacts h1 {
+    font-family: "Spectral SC", serif;
+    width: 40vw;
+    font-size: 5vw;
+    position: absolute;
+    z-index: 3;
+    top: 25vw;
+    text-align: center;
+    left: 49vw;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+  }
+  .contacts form {
+    position: absolute;
+    top: 42vw; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 3; /* Higher than both images */
+    width: 50vw; /* Optional: control size */
+    padding: 2vw;
+    border-radius: 8px; /* Optional: rounded corners */
+  }
+  .contacts input, .contacts textarea {
+    border-radius: 0.9vw;
+  }
+  .contacts .uk-input,
+  .contacts .uk-textarea {
+    background-color: #f8ece4;
+  }
+}
 @media screen and (max-width: 370px) {
   .events .bg2 {
     height: 270vw;
@@ -565,7 +790,7 @@ nav ul li button:focus {
 }
 @media screen and (max-width: 269px) {
   .events .bg2 {
-    height: 290vw;
+    height: 310vw;
   }
 }
 @media screen and (max-width: 225px) {
