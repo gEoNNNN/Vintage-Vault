@@ -12,19 +12,22 @@
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.18.1/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.18.1/dist/js/uikit-icons.min.js"></script>
   <body>
-    <div class="spacer"></div>
+    <div class="spacer" id="home"></div>
     <section class="navbar">
       <img class="bg" src="./assets//dark.png">
       <img class="bg_mobile" src="./assets//dark1.png">
       <nav class="pc_nav">
         <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT US</a></li>
-          <li><a href="#">EVENTS</a></li>
-          <li><a href="#">WINES</a></li>
-          <li><a href="#">CONTACTS</a></li>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#description">ABOUT US</a></li>
+          <li><a href="#events">EVENTS</a></li>
+          <li><a href="#wines">WINES</a></li>
+          <li><a href="#contacts">CONTACTS</a></li>
           <li><button>BECOME A MEMBER</button></li>
         </ul>
+      </nav>
+      <nav class="mobile_nav">
+        
       </nav>
       <img class="logo" src="./assets/logo.png">
     </section>
@@ -34,7 +37,7 @@
       <p class="logo1">Vintage</p>
       <p class="logo2">Vault</p>
     </section>
-    <section class="description">
+    <section class="description" id="description">
       <img src="./assets/margin.png" class="margin">
       <img class="bg1" src="./assets/bg1.png">
       <img class="drowing1" src="./assets/drowing1.png">
@@ -50,7 +53,7 @@
         More than just a shop, Vintage Vault is a haven for collectors, connoisseurs, and those who appreciate the finer things in life. Step inside and experience the rich aroma of time-honored tradition, the elegance of well-aged wines, and the warmth of a community that shares your passion.</h2>
       <img class="description-bottom" src="./assets/top2.png">
       </section>
-      <section class="events">
+      <section class="events" id="events">
         <img class="bg2" src="./assets/bg2.png">
         <div class="events_top">
           <h1>Vintage Vault Event Calendars</h1>
@@ -88,7 +91,7 @@
       <img class="events_bottom" src="./assets/top_dark 2.png">
       </section>
       <img class="wines_bg" src="./assets/Rectangle 49.png" />
-      <section class="test">
+      <section class="test" id="wines">
         <h1 class="wine_title">Wines</h1>
         <ul>
           <li>
@@ -197,7 +200,7 @@
           </li>
         </ul>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <img src="./assets/top2.png" class="contacts_header">
         <img src="./assets/bg2.png" class="contacts_bg">
         <h1>Drop a Line</h1>
