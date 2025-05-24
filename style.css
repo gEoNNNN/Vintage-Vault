@@ -883,4 +883,78 @@ nav ul li button:focus {
   .events .bg2 {
     height: 430vw;
   }
+}
+.mascot-container {
+  position: fixed;
+  bottom: 2vw;
+  left: 2vw;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  animation: mascotAppear 1s 2s forwards;
+}
+
+@keyframes mascotAppear {
+  to {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+.mascot {
+  width: 8vw;
+  max-width: 80px;
+  cursor: pointer;
+  animation: mascotJump 2s infinite, mascotTilt 4s infinite alternate;
+  transition: transform 0.2s;
+}
+
+@keyframes mascotJump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-10px);
+  }
+  20% {
+    transform: translateY(0);
+  }
+}
+@keyframes mascotTilt {
+  0% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+.mascot-message {
+  display: none;
+  background: #fffbe8;
+  color: #7b4c15;
+  border: 2px solid #bd8c4d;
+  border-radius: 1vw;
+  padding: 0.7vw 1.2vw;
+  font-family: "Spectral SC", serif;
+  font-size: 1.1vw;
+  margin-top: 0.5vw;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  white-space: nowrap;
+}
+
+.mascot-container:hover .mascot-message,
+.mascot-container:focus-within .mascot-message {
+  display: block;
+}
+
+@media screen and (max-width: 470px) {
+  .mascot {
+    width: 10vw;
+  }
+  .mascot-container {
+    bottom: 20vw;
+    left: 2vw;
+  }
 }/*# sourceMappingURL=style.css.map */
