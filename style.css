@@ -60,11 +60,19 @@ nav ul li button:focus {
   margin-left: 3vw;
 }
 .navbar .bg {
-  width: 100%;
+  width: 100vw;
   position: absolute;
   margin-left: 0vw;
   z-index: -1;
 }
+.navbar .bg_mobile {
+  display: none;
+  position: absolute;
+}
+.navbar .mobile_nav {
+  display: none;
+}
+
 
 .home p {
   font-family: "Spectral SC", serif;
@@ -103,69 +111,59 @@ nav ul li button:focus {
 }
 .description h1 {
   font-family: "Spectral SC", serif;
-  width: 30%;
+  width: 30vw;
   font-size: 2.2vw;
   position: absolute;
   z-index: 3;
 }
 .description h2 {
   font-family: "Montserrat", sans-serif;
-  width: 35%;
+
+  width: 30vw;
   font-size: 1.2vw;
   position: absolute;
   z-index: 3;
   color: #877C6D;
 }
 .description h3 {
-  top: 20vw;
+  top: 18.5vw;
   left: 52vw;
   font-family: "Spectral SC", serif;
-  width: 35%;
+  width: 30vw;
   font-size: 1.2vw;
   position: absolute;
   z-index: 3;
   color: #BD8D4C;
 }
-.description .margin1 {
-  width: 40vw;
+.description .margin {
+  width: 100vw;
   position: absolute;
-  margin-top: 12vw;
+  margin-top: 8vw;
   margin-left: 0vw;
 }
-.description .margin2 {
-  width: 40vw;
-  position: absolute;
-  margin-top: 12vw;
-  margin-left: 59.2vw;
-}
-.description .margin3 {
-  width: 30vw;
-  position: absolute;
-  margin-top: 12.9vw;
-  margin-left: 35vw;
-}
 .description .title_description1 {
-  top: 21vw;
+  margin-top: -62vw;
   left: 50vw;
 }
 .description .title_description2 {
-  top: 51vw;
+  margin-top: -32vw;
   left: 12vw;
-  width: 35%;
+  width: 34vw;
 }
 .description .description1 {
-  top: 30vw;
+  margin-top: -54vw;
   left: 50vw;
 }
 .description .description2 {
-  top: 60vw;
+  margin-top: -25vw;
+
   left: 12vw;
 }
 .description .crown {
   position: absolute;
   width: 2vw;
   z-index: 3;
-  top: 21vw;
+  top: 20.2vw;
   left: 49.6vw;
 }
 .description .description-bottom {
@@ -209,6 +207,675 @@ nav ul li button:focus {
 }
 .description .bg1 {
   position: relative;
+  width: 100vw;
+  height: 70vw;
+  margin-top: 15vw;
+  z-index: 1;
+}
+
+.events .bg2 {
+  position: relative;
+  width: 100vw;
+  height: 50vw;
+  top: 0vw;
+  left: 0vw;
+  z-index: 1;
+}
+.events .list {
+  position: absolute;
+  top: 135vw;
+  left: 49vw;
+  transform: translateX(-50.1vw);
+  width: 100vw;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+.events .circle {
+  margin: 5vw;
+  width: 12vw;
+}
+.events .events_action {
+  width: 7vw;
+  position: absolute;
+  margin-left: -14.4vw;
+  margin-top: 7vw;
+}
+.events .events_top h1 {
+  font-family: "Spectral SC", serif;
+  width: 30vw;
+  font-size: 2.2vw;
+  position: absolute;
+  z-index: 3;
+  top: 131vw;
+  text-align: center;
+  left: 49vw;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+}
+.events .events_top h2 {
+  top: 124vw;
+  left: 65vw;
+  transform: translate(-50%, -50%);
+  font-family: "Spectral SC", serif;
+  width: 35%;
+  font-size: 1.2vw;
+  position: absolute;
+  z-index: 3;
+  color: #BD8D4C;
+}
+.events .events_top .events_crown {
+  top: 126vw;
+  left: 46vw;
+  transform: translate(-50%, -50%);
+  width: 2vw;
+  position: absolute;
+  z-index: 3;
+}
+.events .events_action_title {
+  font-family: "Spectral SC", serif;
+  font-size: 1.5vw;
+  margin-top: -4vw;
+}
+.events .events_action_description {
+  color: #877C6D;
+  font-family: "Spectral SC", serif;
+  text-align: center;
+  font-size: 0.9vw;
+  width: 50%;
+  margin-left: 6vw;
+}
+.events .events_bottom {
+  position: absolute;
+  z-index: 3;
+  margin-top: 0vw;
+}
+
+.wines_bg {
+  position: absolute;
+  margin-top: 0vw;
+  left: 0;
+  width: 100vw;
+  height: 230vw;
+  z-index: -1;
+}
+
+.test {
+  position: relative;
+  top: 10vw;
+}
+.test ul {
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.test ul li {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.test ul li .card {
+  position: relative;
+  padding: 1rem;
+}
+.test ul li .card .card_bg {
+  width: 35vw;
+}
+.test ul li .card .card_wine {
+  width: 7vw;
+  margin-left: -34vw;
+  margin-top: 4vw;
+  position: absolute;
+}
+.test ul li .card .card_wine2 {
+  width: 10vw;
+  margin-left: -34vw;
+  margin-top: 4vw;
+  position: absolute;
+}
+.test ul li .card .card_wine3 {
+  width: 6vw;
+  margin-left: -34vw;
+  margin-top: 4vw;
+  position: absolute;
+}
+.test ul li .card .card_wine4 {
+  width: 10vw;
+  margin-left: -34vw;
+  margin-top: 6vw;
+  position: absolute;
+}
+.test ul li .card .card_title {
+  font-family: "Spectral SC", serif;
+  font-size: 1.3vw;
+  margin-left: 17vw;
+  margin-top: -24vw;
+  position: absolute;
+}
+.test ul li .card .card_description {
+  font-family: "Spectral SC", serif;
+  width: 20vw;
+  font-size: 0.7vw;
+  position: absolute;
+  z-index: 1;
+  top: 10vw;
+  margin-left: 17vw;
+  text-align: left;
+}
+.test .wine_title {
+  font-family: "Spectral SC", serif;
+  width: 40vw;
+  font-size: 5vw;
+  position: absolute;
+  z-index: 3;
+  text-align: center;
+  left: 49vw;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+}
+
+.mobile_app {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fading-text {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 0.5s forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 1629px) {
+  .description h3 {
+    display: none;
+  }
+  .description .crown {
+    display: none;
+  }
+  .events .events_crown {
+    display: none;
+  }
+  .events h2 {
+    display: none;
+  }
+}
+.contacts {
+  position: relative;
+  margin-top: -10vw;
+}
+.contacts .contacts_header {
+  position: relative;
+  top: 15vw;
+  left: 0;
+  z-index: 2;
+}
+.contacts button {
+  position: absolute;
+  top: 54vw; /* Adjust as needed */
+  left: 70%;
+  transform: translateX(-50%); /* Center horizontally */
+  z-index: 3; /* Higher than both images */
+  width: 12vw; /* Optional: control size */
+  padding: 0.6vw;
+  border-radius: 2vw; /* Optional: rounded corners */
+  font-family: "Spectral SC", serif;
+  background-color: #BD8C4D;
+  font-size: 0.9vw;
+}
+.contacts .contacts_bg {
+  position: relative;
+  width: 100vw;
+  height: 50vw;
+  top: 15vw;
+  left: 0;
+  z-index: 1;
+}
+.contacts h1 {
+  font-family: "Spectral SC", serif;
+  width: 30vw;
+  font-size: 2.6vw;
+  position: absolute;
+  z-index: 3;
+  top: 25vw;
+  text-align: center;
+  left: 49vw;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+}
+.contacts form {
+  position: absolute;
+  top: 32vw; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  z-index: 3; /* Higher than both images */
+  width: 50vw; /* Optional: control size */
+  padding: 2vw;
+  border-radius: 8px; /* Optional: rounded corners */
+}
+.contacts input, .contacts textarea {
+  border-radius: 0.9vw;
+}
+.contacts .uk-input,
+.contacts .uk-textarea {
+  background-color: #f8ece4;
+}
+
+@media screen and (max-width: 1311px) {
+  .wines_bg {
+    height: 230vw;
+  }
+  .contacts button {
+    margin-top: 8vw;
+  }
+}
+@media screen and (max-width: 909px) {
+  .wines_bg {
+    height: 240vw;
+  }
+}
+@media screen and (max-width: 785px) {
+  .home {
+    margin-top: -5vw;
+  }
+  .contacts {
+    margin-top: -14vw;
+  }
+  .contacts button {
+    margin-top: 12vw;
+    width: 15vw;
+    font-size: 1.2vw;
+  }
+  .contacts .contacts_bg {
+    position: relative;
+    width: 100vw;
+    height: 70vw;
+    top: 15vw;
+    left: 0;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 719px) {
+  .wines_bg {
+    height: 250vw;
+  }
+}
+@media screen and (max-width: 607px) {
+  .wines_bg {
+    height: 260vw;
+  }
+  .home {
+    margin-top: -6vw;
+  }
+}
+@media screen and (max-width: 521px) {
+  .wines_bg {
+    height: 270vw;
+  }
+  .home {
+    margin-top: -8vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .wines_bg {
+    height: 280vw;
+  }
+  .home {
+    margin-top: -15vw;
+  }
+}
+@media screen and (max-width: 390px) {
+  .wines_bg {
+    height: 300vw;
+  }
+}
+@media screen and (max-width: 339px) {
+  .home {
+    margin-top: -22vw;
+  }
+}
+@media screen and (max-width: 320px) {
+  .wines_bg {
+    height: 320vw;
+  }
+}
+@media screen and (max-width: 261px) {
+  .home {
+    margin-top: -25vw;
+  }
+}
+@media screen and (max-width: 640px) {
+  .events .bg2 {
+    height: 250vw;
+  }
+  .events .circle {
+    width: 20vw;
+  }
+  .events .events_action {
+    width: 11vw;
+    margin-left: -20vw;
+    margin-top: 10vw;
+  }
+  .events .events_top h1 {
+    width: 40vw;
+    font-size: 3vw;
+  }
+  .events .events_action_title {
+    font-size: 3vw;
+    margin-top: -2vw;
+  }
+  .events .events_action_description {
+    color: #877C6D;
+    font-family: "Spectral SC", serif;
+    font-size: 2vw;
+    margin-left: 6vw;
+    left: 49vw;
+    transform: translateX(20vw);
+  }
+}
+@media screen and (max-width: 470px) {
+  .navbar .mobile_nav {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: -15vw;
+    width: 100vw;
+    z-index: 1000;
+    height: auto;
+  }
+  .navbar .mobilenav_bg {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .navbar .mobile_nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    z-index: 1;
+  }
+  .navbar .mobile_nav ul li {
+    display: flex;
+  }
+  .navbar .mobile_nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar .icon {
+    width: 8vw;
+    height: auto;
+  }
+  .navbar img {
+    width: 10vw;
+    margin-top: 0vw;
+    margin-left: 3vw;
+  }
+  .navbar .bg {
+    display: none;
+  }
+  .navbar .bg_mobile {
+    display: block;
+    width: 100vw;
+    position: absolute;
+    margin-left: 0vw;
+    z-index: -1;
+  }
+  .navbar .pc_nav {
+    display: none;
+  }
+  .navbar .logo {
+    display: none;
+  }
+  .description {
+    top: 110vw;
+  }
+  .events .bg2 {
+    margin-top: 110vw;
+    height: 250vw;
+  }
+  .events .list {
+    margin-top: 75vw;
+  }
+  .events .events_top h1 {
+    margin-top: 74vw;
+  }
+  .home p {
+    font-size: 13vw;
+  }
+  .home .logo2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0vw;
+    margin-top: 60vw;
+  }
+  .home .logo1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0vw;
+    margin-top: 47vw;
+  }
+  .home .frame1 {
+    opacity: 0;
+    width: 35vw;
+    position: absolute;
+    margin-top: 44vw;
+    margin-left: 1vw;
+    animation: slideInLeft 2s ease-in-out 0.5s forwards;
+  }
+  .home .frame2 {
+    opacity: 0;
+    width: 24vw;
+    position: absolute;
+    margin-top: 52vw;
+    margin-left: 72vw;
+    animation: slideInRight 2s ease-in-out 0.5s forwards;
+  }
+  .wines_bg {
+    height: 950vw;
+  }
+  .test ul {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+  .test ul li .card .card_bg {
+    width: 65vw;
+  }
+  .test ul li .card .card_wine {
+    width: 11vw;
+    margin-left: -60vw;
+    margin-top: 11vw;
+    position: absolute;
+  }
+  .test ul li .card .card_wine2 {
+    width: 15.7vw;
+    margin-left: -60vw;
+    margin-top: 11vw;
+    position: absolute;
+  }
+  .test ul li .card .card_wine3 {
+    width: 9.4vw;
+    margin-left: -60vw;
+    margin-top: 11vw;
+    position: absolute;
+  }
+  .test ul li .card .card_wine4 {
+    width: 15.7vw;
+    margin-left: -60vw;
+    margin-top: 14vw;
+    position: absolute;
+  }
+  .test ul li .card .card_title {
+    font-family: "Spectral SC", serif;
+    font-size: 2.4vw;
+    margin-left: 37vw;
+    margin-top: -44vw;
+    position: absolute;
+  }
+  .test ul li .card .card_description {
+    font-family: "Spectral SC", serif;
+    width: 40vw;
+    font-size: 1.45vw;
+    position: absolute;
+    z-index: 1;
+    top: 15vw;
+    margin-left: 37vw;
+    text-align: left;
+  }
+  .test .wine_title {
+    font-family: "Spectral SC", serif;
+    width: 40vw;
+    font-size: 5vw;
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    left: 49vw;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+  }
+  .contacts {
+    position: relative;
+    top: 70vw;
+  }
+  .contacts .contacts_header {
+    position: relative;
+    top: 15vw;
+    left: 0;
+    z-index: 2;
+  }
+  .contacts button {
+    position: absolute;
+    top: 114vw; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 3; /* Higher than both images */
+    width: 30vw; /* Optional: control size */
+    padding: 0.6vw;
+    border-radius: 2vw; /* Optional: rounded corners */
+    font-family: "Spectral SC", serif;
+    background-color: #BD8C4D;
+    font-size: 2.5vw;
+  }
+  .contacts .contacts_bg {
+    position: relative;
+    width: 100vw;
+    height: 130vw;
+    top: 15vw;
+    left: 0;
+    z-index: 1;
+  }
+  .contacts h1 {
+    font-family: "Spectral SC", serif;
+    width: 40vw;
+    font-size: 5vw;
+    position: absolute;
+    z-index: 3;
+    top: 25vw;
+    text-align: center;
+    left: 49vw;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+  }
+  .contacts form {
+    position: absolute;
+    top: 42vw; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 3; /* Higher than both images */
+    width: 50vw; /* Optional: control size */
+    padding: 2vw;
+    border-radius: 8px; /* Optional: rounded corners */
+  }
+  .contacts input, .contacts textarea {
+    border-radius: 0.9vw;
+  }
+  .contacts .uk-input,
+  .contacts .uk-textarea {
+    background-color: #f8ece4;
+  }
+  .mobile_app {
+    display: block;
+  }
+  .mobile_app .mobile_app_content .mobile_app_text {
+    font-family: "Spectral SC", serif;
+    width: 60vw;
+    font-size: 4vw;
+    position: absolute;
+    z-index: 3;
+    top: 1296vw;
+    text-align: center;
+    left: 35vw;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    color: #000;
+  }
+  .mobile_app .mobile_app_content .mockup {
+    position: absolute;
+    margin-top: 10vw;
+    margin-left: 65vw;
+    width: 20vw;
+  }
+  .mobile_app .mobile_app_content .appstore {
+    position: absolute;
+    margin-top: 20vw;
+    margin-left: 20vw;
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 370px) {
+  .events .bg2 {
+    height: 270vw;
+  }
+}
+@media screen and (max-width: 269px) {
+  .events .bg2 {
+    height: 310vw;
+  }
+}
+@media screen and (max-width: 225px) {
+  .events .bg2 {
+    height: 310vw;
+=======
   width: 99.55vw;
   height: 70vw;
   margin-top: 15vw;
@@ -266,5 +933,4 @@ nav ul li button:focus {
   to {
     transform: translateX(0);
     opacity: 1;
-  }
 }/*# sourceMappingURL=style.css.map */
