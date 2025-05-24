@@ -73,6 +73,7 @@ nav ul li button:focus {
   display: none;
 }
 
+
 .home p {
   font-family: "Spectral SC", serif;
   font-weight: 500;
@@ -117,6 +118,7 @@ nav ul li button:focus {
 }
 .description h2 {
   font-family: "Montserrat", sans-serif;
+
   width: 30vw;
   font-size: 1.2vw;
   position: absolute;
@@ -154,6 +156,7 @@ nav ul li button:focus {
 }
 .description .description2 {
   margin-top: -25vw;
+
   left: 12vw;
 }
 .description .crown {
@@ -872,5 +875,62 @@ nav ul li button:focus {
 @media screen and (max-width: 225px) {
   .events .bg2 {
     height: 310vw;
+=======
+  width: 99.55vw;
+  height: 70vw;
+  margin-top: 15vw;
+  margin-left: 0vw;
+  z-index: 1;
+}
+
+.events .bg2 {
+  position: relative;
+  width: 99.55vw;
+  height: 70vw;
+  top: 0vw;
+  left: 0vw;
+  z-index: 1;
+}
+.events .list {
+  position: absolute;
+  top: 300vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
+.fading-text {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 0.5s forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
 }/*# sourceMappingURL=style.css.map */
