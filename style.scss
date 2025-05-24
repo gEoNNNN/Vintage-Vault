@@ -774,7 +774,7 @@ nav {
     .events {
         .bg2{
             margin-top: 110vw; 
-            height: 250vw;
+            height: 290vw;
         }
         .list {
             margin-top: 75vw;
@@ -962,21 +962,26 @@ nav {
         }
     }
 
+    .wines_bg{
+        height: 1000vw;
+    }
+
     .mobile_app {
         display: block;
         .mobile_app_content{
             .mobile_app_text {
-                font-family: "Spectral SC", serif;
-                width: 60vw;
-                font-size: 4vw;
-                position: absolute;
-                z-index: 3;
-                top: 1296vw;
+                position: static;
+                margin: 4vw 0 2vw 0;
+                width: 80vw;
+                font-size: 5vw;
                 text-align: center;
-                left: 35vw;
-                 transform: translate(-50%, -50%);
+                font-family: "Spectral SC", serif;
                 font-weight: 700;
                 color: #000;
+                z-index: 3;
+                transform: none;
+                left: auto;
+                top: auto;
             }
             .mockup {
                 position: absolute;
@@ -998,24 +1003,29 @@ nav {
 @media screen and (max-width: 370px) {
     .events {
         .bg2{ 
-            height: 270vw;
+            height: 330vw;
         }
+    }
+    .wines_bg{
+        height: 1100vw;
     }
 }
 
 @media screen and (max-width: 269px) {
     .events {
         .bg2{ 
-            height: 310vw;
+            height: 390vw;
         }
+    }
+    .wines_bg{
+        height: 1200vw;
     }
 }
 
 @media screen and (max-width: 225px) {
     .events {
         .bg2{ 
-            height: 310vw;
+            height: 430vw;
         }
     }
 }
-

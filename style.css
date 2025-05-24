@@ -73,7 +73,6 @@ nav ul li button:focus {
   display: none;
 }
 
-
 .home p {
   font-family: "Spectral SC", serif;
   font-weight: 500;
@@ -118,7 +117,6 @@ nav ul li button:focus {
 }
 .description h2 {
   font-family: "Montserrat", sans-serif;
-
   width: 30vw;
   font-size: 1.2vw;
   position: absolute;
@@ -156,7 +154,6 @@ nav ul li button:focus {
 }
 .description .description2 {
   margin-top: -25vw;
-
   left: 12vw;
 }
 .description .crown {
@@ -670,7 +667,7 @@ nav ul li button:focus {
   }
   .events .bg2 {
     margin-top: 110vw;
-    height: 250vw;
+    height: 290vw;
   }
   .events .list {
     margin-top: 75vw;
@@ -833,21 +830,25 @@ nav ul li button:focus {
   .contacts .uk-textarea {
     background-color: #f8ece4;
   }
+  .wines_bg {
+    height: 1000vw;
+  }
   .mobile_app {
     display: block;
   }
   .mobile_app .mobile_app_content .mobile_app_text {
-    font-family: "Spectral SC", serif;
-    width: 60vw;
-    font-size: 4vw;
-    position: absolute;
-    z-index: 3;
-    top: 1296vw;
+    position: static;
+    margin: 4vw 0 2vw 0;
+    width: 80vw;
+    font-size: 5vw;
     text-align: center;
-    left: 35vw;
-    transform: translate(-50%, -50%);
+    font-family: "Spectral SC", serif;
     font-weight: 700;
     color: #000;
+    z-index: 3;
+    transform: none;
+    left: auto;
+    top: auto;
   }
   .mobile_app .mobile_app_content .mockup {
     position: absolute;
@@ -864,73 +865,22 @@ nav ul li button:focus {
 }
 @media screen and (max-width: 370px) {
   .events .bg2 {
-    height: 270vw;
+    height: 330vw;
+  }
+  .wines_bg {
+    height: 1100vw;
   }
 }
 @media screen and (max-width: 269px) {
   .events .bg2 {
-    height: 310vw;
+    height: 390vw;
+  }
+  .wines_bg {
+    height: 1200vw;
   }
 }
 @media screen and (max-width: 225px) {
   .events .bg2 {
-    height: 310vw;
-=======
-  width: 99.55vw;
-  height: 70vw;
-  margin-top: 15vw;
-  margin-left: 0vw;
-  z-index: 1;
-}
-
-.events .bg2 {
-  position: relative;
-  width: 99.55vw;
-  height: 70vw;
-  top: 0vw;
-  left: 0vw;
-  z-index: 1;
-}
-.events .list {
-  position: absolute;
-  top: 300vh;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
+    height: 430vw;
   }
-  to {
-    opacity: 1;
-  }
-}
-.fading-text {
-  opacity: 0;
-  animation: fadeIn 2s ease-in-out 0.5s forwards;
-}
-
-@keyframes slideInLeft {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes slideInRight {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
 }/*# sourceMappingURL=style.css.map */
