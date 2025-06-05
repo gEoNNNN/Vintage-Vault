@@ -1,62 +1,27 @@
-# Casino React App
-
-A modern, full-stack casino web application built with React Router, TypeScript, and TailwindCSS.
-
 ## Features
 
-- 🎲 **Multiple Games**: Includes Pig Mines, Bomb Drop, and Find The Card.
-- 💰 **Balance Management**: User balance is stored and updated in localStorage.
-- 📈 **Statistics & History**: Tracks wins, losses, money won/lost, and displays balance history with charts.
-- 🏆 **Daily Rewards**: Users can claim daily rewards with streak tracking.
-- 🌙 **Dark/Light Mode**: Toggle between dark and light themes, with persistent preference.
-- 🔒 **JWT Authentication**: Integrates with a backend for token-based authentication and game result storage.
-- 📊 **Game Results Table**: Shows a history of all game results fetched from the backend.
-- 🚀 **Docker Support**: Ready for containerized deployment.
-- 🎨 **Responsive UI**: Styled with TailwindCSS for a modern look.
+- **Modern Landing Page:** Visually appealing design for a fictional wine business, "Vintage Vault".
+- **Responsive Navigation Bar:** Fixed navigation with smooth access to all sections.
+- **Animated Home Section:** Brand name with animated frames for engaging first impression.
+- **Rich Description Section:** Highlights the story and mission with layered images and styled text.
+- **Events Section:** Showcases upcoming or featured events using a grid of icons.
+- **Custom Visual Assets:** Unique images and backgrounds for a premium look.
+- **Vanilla HTML & CSS:** No frameworks, only semantic HTML and custom SCSS/CSS for styling.
+- **UIkit Integration:** Uses UIkit grid system for event layout.
 
 ## Implementation
 
-### Frontend
+- **HTML Structure:**  
+  The page is divided into semantic sections: navigation, home, description, and events. Each section uses descriptive class names for easy styling.
+- **SCSS/CSS Styling:**  
+  All styles are written in [style.scss](style.scss) and compiled to [style.css](style.css). The design uses custom fonts, color palette, and advanced positioning for layered effects.
+- **Animations:**  
+  Keyframe animations are used for fade-in and sliding effects on text and images.
+- **UIkit Grid:**  
+  The events section uses UIkit's grid classes for responsive layout.
+- **Assets:**  
+  All images and icons are stored in the [assets/](assets/) folder and referenced in the HTML for backgrounds, decorations, and event icons.
 
-- **React Router**: Handles routing and server-side rendering.
-- **TypeScript**: Ensures type safety across the codebase.
-- **TailwindCSS**: Provides utility-first styling.
-- **Chart.js**: Used for rendering balance history charts.
-- **LocalStorage**: Stores user balance, statistics, and reward streaks.
-- **Axios**: Handles HTTP requests to the backend for authentication and game results.
+See [index.html](index.html) and [style.scss](style.scss) for the main implementation.
 
-### Games
-
-- **Pig Mines**: A grid-based game where users avoid bombs to increase their multiplier.
-- **Bomb Drop**: A crash-style game where users bet and try to withdraw before the multiplier crashes.
-- **Find The Card**: Users pick cards in rows, aiming to avoid the wrong card and progress for higher multipliers.
-
-### Statistics
-
-- **Balance History**: Every balance change is recorded and visualized in a line chart.
-- **Game Stats**: Wins, losses, money won/lost, and net profit are tracked per game.
-- **Game Results Table**: Fetched from the backend and displayed in a sortable table.
-
-### Daily Rewards
-
-- Users can claim a daily reward, with the next claim time and streak level tracked in localStorage.
-
-### Theming
-
-- Dark and light modes are supported, with the preference saved in localStorage and synced across the app.
-
-### Backend Integration
-
-- **JWT Token**: Generated and stored in localStorage for authenticated requests.
-- **Game Results**: Sent to and fetched from the backend using secure endpoints.
-
-### Deployment
-
-- **Docker**: Multi-stage Dockerfile for development, build, and production environments.
-- **Vite**: Used for fast development and optimized production builds.
-
----
-
-Built with ❤️ using React, TypeScript, and React Router.
-
-LINK: https://super-treacle-7c7a12.netlify.app/
+Live demo: https://super-treacle-7c7a12.netlify.app/
